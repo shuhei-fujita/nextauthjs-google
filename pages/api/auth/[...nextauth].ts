@@ -10,6 +10,10 @@ const options = {
                 'https://accounts.google.com/o/oauth2/v2/auth?prompt=consent&access_type=offline&response_type=code',
             scope:
                 'https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/youtube.readonly',        
+        }),
+        Providers.LINE({
+            clientId: process.env.LINE_CLIENT_ID,
+            clientSecret: process.env.LINE_CLIENT_SECRET
         })
     ]
 }
